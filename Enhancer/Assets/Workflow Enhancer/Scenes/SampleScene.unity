@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -169,9 +169,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemInfo: {fileID: 11400000, guid: 5c2610feb972ff4449c4df4c1a0ad7c9, type: 2}
-  itemGameObject: {fileID: 1008109717}
+  itemGameObject: {fileID: 32226897}
   bulletImpactPrefab: {fileID: 3477295274748378294, guid: b118d9b0c7313e64a992abed5df1ad93, type: 3}
-  RapidFire: 0
   cam: {fileID: 963194227}
 --- !u!1 &72108421
 GameObject:
@@ -324,7 +323,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10756, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -895,9 +894,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemInfo: {fileID: 11400000, guid: 1e353e0c112769d4384d5dcda295470b, type: 2}
-  itemGameObject: {fileID: 141383665}
+  itemGameObject: {fileID: 1395399813}
   bulletImpactPrefab: {fileID: 3477295274748378294, guid: b118d9b0c7313e64a992abed5df1ad93, type: 3}
-  RapidFire: 0
   cam: {fileID: 963194227}
 --- !u!1 &1666949954
 GameObject:

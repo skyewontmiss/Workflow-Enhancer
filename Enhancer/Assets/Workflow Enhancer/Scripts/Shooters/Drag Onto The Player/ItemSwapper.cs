@@ -16,7 +16,7 @@ public class ItemSwapper : MonoBehaviour
 
 	void Awake()
 	{
-		EquipItem(0);
+		ForceEquipItem(0);
 
 		handler = new ItemHandler();
 		
@@ -62,7 +62,6 @@ public class ItemSwapper : MonoBehaviour
 			}
 		}
 
-		shootWait = new WaitForSeconds(1 / ((GunCreator)Guns[itemIndex].itemInfo).FireRate);
 	}
 
 	void EquipItem(int _index)
@@ -73,11 +72,29 @@ public class ItemSwapper : MonoBehaviour
 		itemIndex = _index;
 
 		Guns[itemIndex].itemGameObject.SetActive(true);
+                shootWait = new WaitForSeconds(1 / ((GunCreator)Guns[itemIndex].itemInfo).FireRate);
 
 		if (previousItemIndex != -1)
 		{
 			Guns[previousItemIndex].itemGameObject.SetActive(false);
 		}
+
+		previousItemIndex = itemIndex;
+	}
+
+void ForceEquipItem(int _index)
+	{
+		if (_index == previousItemIndex)
+			return;
+
+		itemIndex = _index;
+foreach(AbstractGun item in Guns)
+{
+			item.itemGameObject.SetActive(false);
+		}
+		Guns[itemIndex].itemGameObject.SetActive(true);
+		shootWait = new WaitForSeconds(1 / ((GunCreator)Guns[itemIndex].itemInfo).FireRate);
+
 
 		previousItemIndex = itemIndex;
 	}
