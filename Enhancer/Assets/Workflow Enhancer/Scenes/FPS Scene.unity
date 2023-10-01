@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 32226898}
   - component: {fileID: 32226899}
   m_Layer: 0
-  m_Name: Gigga
+  m_Name: Shotgun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -172,6 +172,8 @@ MonoBehaviour:
   itemGameObject: {fileID: 32226897}
   bulletImpactPrefab: {fileID: 3477295274748378294, guid: b118d9b0c7313e64a992abed5df1ad93, type: 3}
   cam: {fileID: 963194227}
+  sound: {fileID: 0}
+  SFXPlayer: {fileID: 0}
 --- !u!1 &72108421
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,7 +284,7 @@ GameObject:
   - component: {fileID: 141383669}
   - component: {fileID: 141383668}
   m_Layer: 0
-  m_Name: Gun2
+  m_Name: AR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -323,7 +325,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 35d5c2bc83bcab7468a970d08b93691b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -777,7 +779,7 @@ GameObject:
   - component: {fileID: 1008109721}
   - component: {fileID: 1008109720}
   m_Layer: 0
-  m_Name: gergserg4hgwsevrg
+  m_Name: SG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -818,7 +820,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d5641108e27672244977a8c65ce3fc6a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -859,7 +861,7 @@ GameObject:
   - component: {fileID: 1395399814}
   - component: {fileID: 1395399815}
   m_Layer: 0
-  m_Name: jiger
+  m_Name: Assault Rifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -897,6 +899,8 @@ MonoBehaviour:
   itemGameObject: {fileID: 1395399813}
   bulletImpactPrefab: {fileID: 3477295274748378294, guid: b118d9b0c7313e64a992abed5df1ad93, type: 3}
   cam: {fileID: 963194227}
+  sound: {fileID: 0}
+  SFXPlayer: {fileID: 0}
 --- !u!1 &1666949954
 GameObject:
   m_ObjectHideFlags: 0
