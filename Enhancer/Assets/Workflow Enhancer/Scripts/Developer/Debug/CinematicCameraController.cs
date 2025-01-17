@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 
-public class CameraLooker : MonoBehaviour
+public class CinematicCameraController : MonoBehaviour
 {
 
 	[Header("Look Settings")]

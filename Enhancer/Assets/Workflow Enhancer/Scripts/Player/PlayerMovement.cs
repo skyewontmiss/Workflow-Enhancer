@@ -61,12 +61,10 @@ public class PlayerMovement : MonoBehaviour
 		{
 			if (!Run)
 			{
-				Debug.Log("walking with speed: " + speed);
 				move *= Controls.Movement.Run.ReadValue<float>() * speed;
 			}
 			else
 			{
-				Debug.Log("sprinting with speed: " + (Controls.Movement.Run.ReadValue<float>() == 0 ? speed : runSpeed));
 				move *= Controls.Movement.Run.ReadValue<float>() == 0 ? speed : runSpeed;
 			}
 		}
