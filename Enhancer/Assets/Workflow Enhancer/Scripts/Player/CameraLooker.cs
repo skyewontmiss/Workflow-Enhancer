@@ -6,11 +6,13 @@ public class CameraLooker : MonoBehaviour
 {
 
 	[Header("Look Settings")]
-[SerializeField] float  HorizontalSensitivity  = .02f;
-[SerializeField] float  VerticalSensitivity  = .25f;
+[SerializeField] float  HorizontalSensitivity  = 30.0f;
+[SerializeField] float  VerticalSensitivity  = 30.0f;
 	private Vector2 lookInput; // Store the look input
 	InputMaster.CameraLookActions Controls;
-	[SerializeField] GameObject Camera;
+	[SerializeField] GameObject BodyRotatorBone;
+	public Camera camera;
+	[HideInInspector]
 
 	void Awake()
 	{
@@ -52,6 +54,7 @@ transform.Rotate(Vector3.up * Controls.MouseX.ReadValue<float>() * HorizontalSen
 		verticalLookRotation +=  Controls.MouseY.ReadValue<float>() * VerticalSensitivity;
 		verticalLookRotation = Mathf.Clamp(verticalLookRotation, -90f, 90f);
 
-		Camera.transform.localEulerAngles = Vector3.left * verticalLookRotation;
+		camera.transform.localEulerAngles = Vector3.left * verticalLookRotation;
+		BodyRotatorBone.transform.localEulerAngles = Vector3.left * verticalLookRotation;
 	}
 }
